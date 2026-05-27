@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int a=1; a<=9; a++) {
+        for(int b=1; b<=a; b++) {
+            cout << b << "×" << a << "=" << b*a << " ";
+        }
+        cout << endl;  
+    }
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 1;
+    while(a <= 9) {
+        int b = 1;
+        while(b <= a) {
+            cout << b << "×" << a << "=" << b*a << " ";
+            b++;
+        }
+        cout << endl;
+        a++;
+    }
+    return 0;
+}
