@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    
+    double money = 0;
+    
+    if(n <= 150) {
+        money = n * 0.44630;
+    } else if(n <= 400) {
+        money = 150 * 0.44630 + (n - 150) * 0.46630;
+    } else {
+        money = 150 * 0.44630 + 250 * 0.46630 + (n - 400) * 0.56630;
+    }
+    
+    cout.precision(11);
+    cout << money << endl;
+    return 0;
+}
