@@ -1,0 +1,18 @@
+ #include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    string coin(n, '0');
+    cout << n << endl;
+      for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (j != i) {
+                coin[j] = (coin[j] == '0') ? '1' : '0';
+            }
+        }
+        cout << coin << endl;
+    }
+    return 0;
+}
